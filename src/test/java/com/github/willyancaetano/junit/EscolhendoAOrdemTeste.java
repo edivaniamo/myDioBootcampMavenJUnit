@@ -27,6 +27,7 @@ package com.github.willyancaetano.junit;
 import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.DisplayName.class)
+//@TestMethodOrder(MethodOrderer.Random.class) //Executa na ordem aleatória
 public class EscolhendoAOrdemTeste {
 
     @DisplayName("Teste que valida se o usuário foi criado")
