@@ -32,6 +32,7 @@ public class AssumptionsTeste {
 
     @Test
     void validarAlgoSomenteNoUsuarioWillyan() {
+       //Assumptions.assumeTrue("willyan".equals(System.getenv("Willyan"))); //Executar apenas quando estiver logado com esse usuário
         Assumptions.assumeFalse("root".equals(System.getenv("USER")));
         Assertions.assertEquals(10, 5 + 5);
     }
