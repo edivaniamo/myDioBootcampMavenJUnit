@@ -36,10 +36,12 @@ public class ExceptionsTeste {
 
         TransferenciaEntreContas transferenciaEntreContas = new TransferenciaEntreContas();
 
-        //De fato lançou a execeção ao entrar nesse método
+        //Existem dois métdos para validar execeção
+        //De fato lançou a execeção ao entrar nesse método (Espera que a exceção seja lançada)
         // Assertions.assertThrows(IllegalArgumentException.class, () ->
        //          transferenciaEntreContas.transfere(contaOrigem, contaDestino, -1));
 
+        //Não espera que a exceção seja lançada
         Assertions.assertDoesNotThrow(() -> transferenciaEntreContas.transfere(contaOrigem, contaDestino, 20));
     }
 }
